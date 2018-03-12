@@ -12,7 +12,7 @@ import java.util.List;
     @Controller
     public class ProduktyController {
 
-        private ListaProduktow produkty;
+  public  ListaProduktow produkty;
 
         public ProduktyController(ListaProduktow produkty) {
             this.produkty = produkty;
@@ -28,8 +28,7 @@ import java.util.List;
 
         @GetMapping("/list")
         public String Produkty(Model model){
-            produkty.ListaProduktow();
-            produkty.pobierzProdukty();
+         List<Produkt> produkty = this.produkty.pobierzProdukty();
          model.addAttribute("produkty", produkty);
          return "produkty";
         }
