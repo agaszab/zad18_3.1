@@ -38,6 +38,6 @@ public class Produkt {
 
     @Override
     public String toString() {
-        return "Nazwa produktu: " + nazwa + ", kategoria: " + kategoria + ", cena: " + cena+"\n\n";
+        return "Nazwa produktu: " + nazwa + ", kategoria: " + kategoria + ", cena: " + cena+"<br/>";
     }
 }

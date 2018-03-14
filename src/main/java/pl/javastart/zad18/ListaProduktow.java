@@ -12,7 +12,8 @@ public class ListaProduktow {
 
     private List <Produkt> produkty;
 
-    public void ListaProduktow () {
+
+    public  ListaProduktow () {
 
         produkty = new ArrayList<>();
 
@@ -42,11 +43,29 @@ public class ListaProduktow {
     }
 
 
+
+        public List<Produkt> pobierzProduktyKat(String kategorie) {
+
+        List<Produkt> pom= new ArrayList<>();
+        for (Produkt produkt : produkty) {
+            String kat=produkt.getKategoria().getName();
+            if(kat.equals(kategorie)) {
+                pom.add(produkt);
+            }
+        }
+        return pom;
+    }
+
+
+
     public void add (Produkt produkt) {
 
         produkty.add(produkt);
 
     }
 
-
+    @Override
+    public String toString() {
+        return  produkty + "\n";
+    }
 }

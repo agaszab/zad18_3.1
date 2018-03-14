@@ -2,9 +2,9 @@ package pl.javastart.zad18;
 
 public enum Kategorie {
 
-    SPOZYWCZE ("Art. spożywcze"),
-    DOMOWE ("Art. gosp. domowego"),
-    INNE ("Inne");
+    SPOZYWCZE ("SPOZYWCZE"),
+    DOMOWE ("DOMOWE"),
+    INNE ("INNE");
 
     private String name;
 
